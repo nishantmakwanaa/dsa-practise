@@ -1,16 +1,19 @@
-import src.LL;
+import src.Btrees;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        LL list = new LL();
+        Btrees tree = new Btrees();
 
-        list.add(12);
+        tree.insert(50);
+        tree.insert(30);
 
-        System.out.println("Linked List:");
+        tree.insert(20);
+        tree.insert(40);
+        tree.insert(70);
 
-        list.display();
+        tree.printInorder();
 
     }
 }
